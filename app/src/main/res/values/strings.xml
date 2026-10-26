@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    NothingNotes – privacy-first notes for Android
+    Copyright (C) 2026 Real3rr0r303YT
+    SPDX-License-Identifier: GPL-3.0-or-later
+    Licensed under the GNU GPL v3. See LICENSE for details.
+-->
+<resources>
+    <string name="app_name" translatable="false">NothingNotes</string>
+
+    <!-- Notes overview -->
+    <string name="notes_title">NOTES</string>
+    <plurals name="notes_count">
+        <item quantity="one">%d note</item>
+        <item quantity="other">%d notes</item>
+    </plurals>
+    <string name="notes_empty_title">Nothing here yet</string>
+    <string name="notes_empty_hint">Tap + to write your first note.</string>
+    <string name="notes_search_empty">No notes match your search.</string>
+    <string name="notes_search_hint">Search notes</string>
+    <string name="notes_untitled">Untitled</string>
+    <string name="notes_pinned">PINNED</string>
+    <string name="notes_others">OTHERS</string>
+
+    <!-- Editor -->
+    <string name="editor_new">NEW NOTE</string>
+    <string name="editor_title_hint">Title</string>
+    <string name="editor_content_hint">Start writing… Markdown and - [ ] to-dos supported.</string>
+    <string name="editor_mode_edit">Edit</string>
+    <string name="editor_mode_preview">Preview</string>
+    <string name="editor_tasks_done">%1$d/%2$d DONE</string>
+
+    <!-- Actions -->
+    <string name="action_back">Back</string>
+    <string name="action_new_note">New note</string>
+    <string name="action_search">Search</string>
+    <string name="action_close_search">Close search</string>
+    <string name="action_grid_view">Grid view</string>
+    <string name="action_list_view">List view</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_pin">Pin</string>
+    <string name="action_unpin">Unpin</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_open">Open</string>
+
+    <!-- Formatting toolbar -->
+    <string name="format_bold">Bold</string>
+    <string name="format_italic">Italic</string>
+    <string name="format_strike">Strikethrough</string>
+    <string name="format_heading">Heading</string>
+    <string name="format_bullet">Bullet list</string>
+    <string name="format_todo">To-do item</string>
+    <string name="format_code">Code</string>
+    <string name="format_quote">Quote</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_delete_note_title">Delete note?</string>
+    <string name="dialog_delete_note_text">This note will be removed permanently. There is no recycle bin and no cloud copy.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">SETTINGS</string>
+    <string name="settings_section_language">LANGUAGE</string>
+    <string name="settings_language_system">System default</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_de">Deutsch</string>
+
+    <string name="settings_section_privacy">PRIVACY</string>
+    <string name="settings_offline_title">100 % offline</string>
+    <string name="settings_offline_text">This app has no internet permission. Android itself blocks every network connection – your notes physically cannot leave this device.</string>
+    <string name="settings_encryption_title">Encrypt notes (AES-256)</string>
+    <string name="settings_encryption_text">AES-256-GCM with a key that lives in the Android Keystore and can never be exported.</string>
+    <string name="settings_encryption_working">Re-encrypting notes…</string>
+
+    <string name="settings_secure_title">Block screenshots</string>
+    <string name="settings_secure_text">Hides your notes from screenshots, screen recordings and the recent apps overview.</string>
+
+    <string name="settings_section_data">DATA</string>
+    <string name="settings_delete_all_title">Delete all data</string>
+    <string name="settings_delete_all_text">Removes every note, all settings and the encryption key.</string>
+    <string name="dialog_delete_all_title">Delete everything?</string>
+    <string name="dialog_delete_all_text">All notes, settings and the encryption key will be wiped irreversibly. This cannot be undone.</string>
+    <string name="dialog_delete_all_confirm">Delete everything</string>
+    <string name="settings_delete_all_done">All data deleted.</string>
+
+    <string name="settings_section_support">SUPPORT</string>
+    <string name="settings_donate_title">Buy Me a Coffee</string>
+    <string name="settings_donate_text">NothingNotes is free and open source. If you like it, you can support development.</string>
+    <string name="dialog_donate_title">Leave the app?</string>
+    <string name="dialog_donate_text">This opens buymeacoffee.com/3rr0r303yt in your browser. NothingNotes itself stays offline and shares nothing.</string>
+    <string name="donate_no_browser">No browser found.</string>
+
+    <string name="settings_section_about">ABOUT</string>
+    <string name="settings_version">Version %1$s</string>
+    <string name="settings_license">Licensed under the GNU GPL v3.0</string>
+    <string name="settings_copyright" translatable="false">© 2026 Real3rr0r303YT</string>
+</resources>

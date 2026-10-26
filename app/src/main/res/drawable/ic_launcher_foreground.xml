@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    NothingNotes – privacy-first notes for Android
+    Copyright (C) 2026 Real3rr0r303YT
+    SPDX-License-Identifier: GPL-3.0-or-later
+    Licensed under the GNU GPL v3. See LICENSE for details.
+-->
+<!-- Dot-matrix "N" with a single red dot – NothingNotes launcher mark. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group android:translateX="36" android:translateY="33">
+        <!-- left column -->
+        <path android:fillColor="#FFFFFF" android:pathData="M3,3m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M3,12m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M3,21m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M3,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M3,39m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <!-- diagonal -->
+        <path android:fillColor="#FFFFFF" android:pathData="M12,12m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M18,21m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M24,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <!-- right column -->
+        <path android:fillColor="#D71921" android:pathData="M33,3m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M33,12m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M33,21m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M33,30m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+        <path android:fillColor="#FFFFFF" android:pathData="M33,39m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    </group>
+</vector>

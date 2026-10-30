@@ -87,7 +87,7 @@
     <string name="settings_donate_title">Buy Me a Coffee</string>
     <string name="settings_donate_text">NothingNotes is free and open source. If you like it, you can support development.</string>
     <string name="dialog_donate_title">Leave the app?</string>
-    <string name="dialog_donate_text">This opens buymeacoffee.com/3rr0r303yt in your browser. NothingNotes itself stays offline and shares nothing.</string>
+    <string name="dialog_donate_text">This opens buymeacoffee.com/3rr0r303YT in your browser. NothingNotes itself stays offline and shares nothing.</string>
     <string name="donate_no_browser">No browser found.</string>
 
     <string name="settings_section_about">ABOUT</string>

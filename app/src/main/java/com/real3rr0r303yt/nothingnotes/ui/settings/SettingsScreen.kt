@@ -89,7 +89,7 @@ import com.real3rr0r303yt.nothingnotes.ui.theme.NothingOutline
 import com.real3rr0r303yt.nothingnotes.ui.theme.NothingRed
 import com.real3rr0r303yt.nothingnotes.ui.theme.NothingWhite
 
-const val DONATION_URL = "https://www.buymeacoffee.com/3rr0r303yt"
+const val DONATION_URL = "https://buymeacoffee.com/3rr0r303YT"
 
 @Composable
 fun SettingsScreen(

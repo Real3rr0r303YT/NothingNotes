@@ -94,4 +94,14 @@
     <string name="settings_version">Version %1$s</string>
     <string name="settings_license">Licensed under the GNU GPL v3.0</string>
     <string name="settings_copyright" translatable="false">© 2026 Real3rr0r303YT</string>
+    <!-- Widget -->
+    <string name="widget_notes_name">Notes</string>
+    <string name="widget_notes_desc">Note count and a quick “new note” button – never shows note content</string>
+    <string name="widget_notes_new">+ NEW</string>
+    <string name="widget_notes_open">OPEN</string>
+    <string name="widget_notes_pinned">%1$d pinned</string>
+    <plurals name="widget_notes_count">
+        <item quantity="one">%d note</item>
+        <item quantity="other">%d notes</item>
+    </plurals>
 </resources>

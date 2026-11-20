@@ -24,9 +24,13 @@ import com.real3rr0r303yt.nothingnotes.data.NoteRepository
 import com.real3rr0r303yt.nothingnotes.data.NotesDatabase
 import com.real3rr0r303yt.nothingnotes.data.SettingsRepository
 import com.real3rr0r303yt.nothingnotes.security.CryptoManager
+import com.real3rr0r303yt.nothingnotes.widget.NotesWidget
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.launch
 
 class NothingNotesApp : Application() {
 
@@ -50,6 +54,17 @@ class AppContainer(context: Context) {
     val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
     val cacheDirs = listOf(context.cacheDir)
+
+    init {
+        // Keep the home screen widget's counts in sync with every change.
+        val app = context.applicationContext
+        appScope.launch {
+            database.noteDao().observeAll()
+                .map { rows -> rows.size to rows.count { it.pinned } }
+                .distinctUntilChanged()
+                .collect { NotesWidget.updateAll(app) }
+        }
+    }
 }
 
 val Context.appContainer: AppContainer

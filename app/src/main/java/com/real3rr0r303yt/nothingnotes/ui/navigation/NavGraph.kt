@@ -22,6 +22,11 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -44,8 +49,16 @@ object Routes {
 }
 
 @Composable
-fun NothingNotesNavHost() {
+fun NothingNotesNavHost(openNewNote: Boolean = false) {
     val navController = rememberNavController()
+    // Widget "+ NEW": open the editor once (not again after rotation / process restore).
+    var newNoteHandled by rememberSaveable { mutableStateOf(false) }
+    LaunchedEffect(openNewNote) {
+        if (openNewNote && !newNoteHandled) {
+            newNoteHandled = true
+            navController.navigate(Routes.editor())
+        }
+    }
     NavHost(
         navController = navController,
         startDestination = Routes.NOTES,

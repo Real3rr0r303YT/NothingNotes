@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         setContent {
             NothingNotesTheme {
-                NothingNotesNavHost()
+                NothingNotesNavHost(openNewNote = intent?.getBooleanExtra(EXTRA_NEW_NOTE, false) == true)
             }
         }
     }
@@ -67,5 +67,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    companion object {
+        /** Set by the home screen widget's "+ NEW" button. */
+        const val EXTRA_NEW_NOTE = "com.real3rr0r303yt.nothingnotes.NEW_NOTE"
     }
 }

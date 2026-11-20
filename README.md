@@ -14,6 +14,7 @@ Pure OLED black, dot-matrix typography, a whisper of red. And not a single byte 
   lists, code blocks, rules – with a formatting toolbar and live preview.
 - **To-do lists**: `- [ ]` items, tappable checkboxes in preview, progress indicator,
   automatic list continuation on Enter.
+- **Home screen widget**: dot-matrix header, note count and a one-tap “+ NEW” button – it never shows titles or content.
 - **English & German**: follows the system language, or pick one in Settings
   (also available in Android's per-app language settings on Android 13+).
 

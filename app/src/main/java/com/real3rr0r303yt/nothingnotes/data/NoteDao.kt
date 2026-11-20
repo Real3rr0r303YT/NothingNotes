@@ -34,6 +34,13 @@ interface NoteDao {
     @Query("SELECT * FROM notes")
     suspend fun getAll(): List<NoteEntity>
 
+    /** Home screen widget: number of notes – never their content. */
+    @Query("SELECT COUNT(*) FROM notes")
+    suspend fun count(): Int
+
+    @Query("SELECT COUNT(*) FROM notes WHERE pinned = 1")
+    suspend fun pinnedCount(): Int
+
     @Query("SELECT * FROM notes WHERE id = :id")
     suspend fun getById(id: Long): NoteEntity?
 
